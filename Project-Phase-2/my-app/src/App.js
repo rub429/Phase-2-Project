@@ -6,6 +6,7 @@ import About from '..pages/About';
 import Pricing from '..pages/Pricing';
 import Home from '..pages/Home';
 import { Component } from 'react';
+import { Route,Routes } from 'react-router-dom';
 
 function App() {
   // console.log(window.location);
@@ -29,6 +30,11 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Routes>
+      <Route path='/' element = {<Home/>}/>
+      <Route path='/pricing' element = {<Pricing/>}/>
+      <Route path='/about' element = {<About/>}/>
+    </Routes>
     </>
   );
 }
