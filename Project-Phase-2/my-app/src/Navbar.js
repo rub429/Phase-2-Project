@@ -3,8 +3,7 @@ import React, { Children } from 'react'
 function CustomLink({href,Children,...props}){
     const path = window.location.pathname
     
-    return
-    (
+    return(
 <li className={path ===href ? 'active':''}><a href= {href} {...props}>{Children}</a></li>
     )
 }
