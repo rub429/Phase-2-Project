@@ -8,29 +8,27 @@ import Home from '..pages/Home';
 import { Component } from 'react';
 
 function App() {
-  console.log(window.location);
-  switch (window.location.pathname) {
+  // console.log(window.location);
+  // switch (window.location.pathname) {
     
-    case "/":
-      Component = Home
-      break;
+  //   case "/":
+  //     Component = Home
+  //     break;
 
-    case "/pricing":
-      Component = Pricing
-      break;
+  //   case "/pricing":
+  //     Component = Pricing
+  //     break;
   
-    case "/about":
-      Component = About
-      break;
+  //   case "/about":
+  //     Component = About
+  //     break;
       
-    default:
-      break;
-  }
-  
+  //   default:
+  //     break;
+  // }
   return (
     <>
     <Navbar/>
-    <Component/>
     </>
   );
 }
