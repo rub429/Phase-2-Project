@@ -3,7 +3,12 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className='nav'>
-    <div>Navbar</div>
+    <a href='/' className='site-title'>Business Site</a>
+    {/* Business site           pricing     about */}
+    <ul>
+        <li><a href='/pricing'>pricing</a></li>
+        <li><a href='/about'>about</a></li>
+    </ul>
     </nav>
   )
 }
