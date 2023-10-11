@@ -2,10 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import '../src/style.css'
-import About from '..pages/About';
-import Pricing from '..pages/Pricing';
-import Home from '..pages/Home';
-import { Component } from 'react';
+import About from './pages/About';
+import Pricing from './pages/Pricing';
+import Home from './pages/Home';
 import { Route,Routes } from 'react-router-dom';
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
   //   default:
   //     break;
   // }
-  return (
+  return(
     <>
     <Navbar/>
     <Routes>
