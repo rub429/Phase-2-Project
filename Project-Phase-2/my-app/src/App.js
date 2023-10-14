@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import '../src/style.css'
@@ -6,26 +5,27 @@ import About from './pages/About';
 import Pricing from './pages/Pricing';
 import Home from './pages/Home';
 import { Route,Routes } from 'react-router-dom';
+import React from "react";
 
 function App() {
-  // console.log(window.location);
-  // switch (window.location.pathname) {
-    
-  //   case "/":
-  //     Component = Home
-  //     break;
-
-  //   case "/pricing":
-  //     Component = Pricing
-  //     break;
+  return (
+    <div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/pricing">
+          <Pricing />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
   
-  //   case "/about":
-  //     Component = About
-  //     break;
-      
-  //   default:
-  //     break;
-  // }
   return(
     <>
     <Navbar/>
@@ -36,7 +36,6 @@ function App() {
     </Routes>
     </>
   );
-}
 
 export default App;
  

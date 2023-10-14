@@ -1,21 +1,21 @@
 import React, {  } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-function CustomLink({href,Children,...props}){
-    const path = window.location.pathname
-    
-    return(
-{/* <li className={path ===true ? 'active':''}>
-    <Link to= {to} {...props}>{Children}</Link>
-    </li> */}
-    )
-}
+const linkStyles = {
+  display: "inline-block",
+  width: "50px",
+  padding: "12px",
+  margin: "0 6px 6px",
+  background: "blue",
+  textDecoration: "none",
+  color: "white",
+};
 
 const Navbar = () => {
     const path = window.location.pathname
   return (
     <nav className='nav'>
-    <Link to='/' className='site-title'>Shoelore: Enjoy Your Feetware</Link>
+    <NavLink to='/' className='site-title'>Shoelore: Enjoy Your Feetware</NavLink>
     {/* Shoelore           Pricing     About */}
     <ul>
         {/* <CustomLink href='/pricing'>Pricing</CustomLink>
